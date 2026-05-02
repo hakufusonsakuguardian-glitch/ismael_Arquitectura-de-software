@@ -1,6 +1,6 @@
 
 const SUPABASE_URL = "https://vhczwcsglfgioiurcths.supabase.co";
-const SUPABASE_KEY = "sb_publishable_ElVFpBMp8VFIvm3BUA-V0w_JY7xbGSm";
+const SUPABASE_KEY = "ssb_publishable_ElVFpBMp8VFIvm3BUA-V0w_JY7xbGSm";
 
 let supabase = null;
 
