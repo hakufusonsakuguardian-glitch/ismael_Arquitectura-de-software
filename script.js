@@ -2,13 +2,7 @@
 const SUPABASE_URL = "https://vhczwcsglfgioiurcths.supabase.co";
 const SUPABASE_KEY = "ssb_publishable_ElVFpBMp8VFIvm3BUA-V0w_JY7xbGSm";
 
-let supabase = null;
-
-if (window.supabase) {
-  supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-} else {
-  console.error("Supabase no cargó ❌");
-}
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 let esAdmin = false;
 
