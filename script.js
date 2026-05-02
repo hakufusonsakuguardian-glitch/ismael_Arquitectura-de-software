@@ -109,7 +109,18 @@ async function agregarSemana() {
     const file = input.files[0];
     const nombre = Date.now() + "_" + file.name;
 
-    await supabase.storage.from("pdfs").upload(nombre, file);
+    const { data, error } = await supabase
+    .storage
+    .from("pdfs")
+    .upload(nombre, file);
+
+   console.log("UPLOAD:", data);
+   console.log("ERROR:", error);
+
+   if (error) {
+      alert("Error al subir PDF ❌");
+      return;
+   }
 
     const { data } = supabase.storage.from("pdfs").getPublicUrl(nombre);
 
