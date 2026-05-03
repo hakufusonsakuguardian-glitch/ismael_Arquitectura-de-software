@@ -16,16 +16,22 @@
 
   <div class="usuario">
     Ismael
-    <span class="admin-btn" onclick="mostrarLogin()">⚙️</span>
+    <span class="admin-btn" onclick="mostrarLogin()">👤</span>
   </div>
 </header>
 
 <main>
   <h2>Semanas</h2>
 
-  <button id="btnAgregar" onclick="agregarSemana()" style="display:none;">
-    ➕ Agregar Semana
-  </button>
+  <div class="acciones">
+    <button id="btnAgregar" onclick="agregarSemana()" style="display:none;">
+      ➕ Agregar Semana
+    </button>
+
+    <button id="btnImagenGlobal" onclick="agregarImagenSemana()" style="display:none;">
+      🖼️ Agregar Imagen a Semana
+    </button>
+  </div>
 
   <div id="contenedor-semanas"></div>
 </main>
